@@ -10,8 +10,6 @@ module Tests =
         let highestCalories = 
             @"../../../Data1.txt"
             |> Advent1.calculateHighest
-            |> fun x -> x.Sum.ToString() 
-
-        printfn $"Day 1: Highest Calories is {highestCalories}"
-
-        Assert.True(true)
+            |> fun x -> x.Sum
+        
+        Assert.Equal(72070., highestCalories)
