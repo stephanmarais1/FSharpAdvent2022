@@ -17,6 +17,6 @@ module Tests =
     [<Fact>]
     let ``Advent Day2`` () =
 
-        let score = Advent2.calculateScores @"../../../Data2.txt" |> snd
+        let score = Advent2.calculateScores @"../../../Data2.txt"
         
         Assert.Equal(10595, score)
